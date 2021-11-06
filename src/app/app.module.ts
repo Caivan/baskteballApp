@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { TeamDetailComponent } from './team-detail/team-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AppRoutingModule } from './app-routing.module';
     TrackMatchComponent,
     TeamsListComponent,
     AboutComponent,
+    TeamDetailComponent
   ],
   entryComponents: [],
   imports: [

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { TeamsService } from '../services/teams.service';
 
 @Component({
   selector: 'app-teams-list',
@@ -7,8 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamsListComponent implements OnInit {
 
-  constructor() { }
+  teams: any;
+
+  constructor(private teamsService: TeamsService, private router: Router) {
+      this.teams = this.teamsService.getAllTeams();
+  }
 
   ngOnInit() {}
 
+  showDetail(index){
+    this.router.navigate(['/team-detail', index]);
+  }
 }

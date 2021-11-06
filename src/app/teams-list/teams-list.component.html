@@ -1,7 +1,9 @@
-<div id="container" >
-  <p>
-    teams-list works!
-  </p>  
+<div id="container">
+  <div *ngFor="let team of teams; let i = index" (click)="showDetail(i)" >
+    <p>
+      {{team.name}}
+    </p>  
+  </div>
 </div>
 
 

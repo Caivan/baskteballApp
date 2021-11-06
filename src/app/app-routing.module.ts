@@ -4,6 +4,7 @@ import { HomePage } from './home/home.page';
 import { TrackMatchComponent } from './track-match/track-match.component';
 import { AboutComponent } from './about/about.component';
 import { TeamsListComponent } from './teams-list/teams-list.component';
+import { TeamDetailComponent } from './team-detail/team-detail.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'teams-list',
     component: TeamsListComponent
+  },
+  {
+    path: 'team-detail/:idTeam',
+    component: TeamDetailComponent
   },
   {
     path: '',
